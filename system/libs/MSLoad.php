@@ -34,7 +34,7 @@
 					ob_start();
 					if(in_array($controller,$this->loadedControllers)){
 						$running = new $controller();
-						$running->run();
+						$running->activeIndex();
 						$MSCache->runCache();
 						ob_end_flush();
 						return true;
@@ -42,7 +42,7 @@
 					require_once APPLICATION_PATH."back/controllers/".$controller.".php";
 					array_push($this->loadedControllers,$controller);
 					$running = new $controller();
-					$running->run();
+					$running->activeIndex();
 					$MSCache->runCache();
 					ob_end_flush();
 					return true;

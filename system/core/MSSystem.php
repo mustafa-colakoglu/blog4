@@ -40,12 +40,12 @@
 			if(@file_exists(APPLICATION_PATH."back/controllers/".$controllerName.".php")){
 				require APPLICATION_PATH."back/controllers/".$controllerName.".php";
 				$running = new $controllerName();
-				$running->run();
+				$running->activeIndex();
 			}
 			else{
 				require APPLICATION_PATH."back/controllers/hata.php";
 				$running = new $this->hata();
-				$running->run();
+				$running->activeIndex();
 			}
 		}
 		function bootstrap(){

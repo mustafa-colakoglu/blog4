@@ -8,7 +8,7 @@
 		)
 		*/
 		"anasayfa" => array(
-			"cache" => true,
+			"cache" => false,
 			"timer" => 600
 		)
 	);

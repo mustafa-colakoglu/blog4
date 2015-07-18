@@ -1,10 +1,10 @@
 <?php
-	class anasayfa extends MSController{
+	class anasayfaBas extends MSController{
 		function __construct(){
 			parent::__construct();
 		}
 		function activeIndex(){
-			$this->controller("anasayfaBas");
+			$this->view("anasayfaBas");
 		}
 	}
 ?>
