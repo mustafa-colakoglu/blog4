@@ -5,6 +5,7 @@
 		}
 		function activeIndex(){
 			$this->controller("anasayfaBas");
+			$this->controller("anasayfaSection");
 		}
 	}
 ?>

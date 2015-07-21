@@ -15,7 +15,7 @@
 			<menu class="anaMenu">
 				<div class="solMenu">
 					<ul class="sol">
-						<li><a href="<?php echo MSGet::getSite(); ?>/anasayfa" class="selected">Anasayfa</a></li>
+						<li><a href="<?php echo MSGet::getSite(); ?>/anasayfa">Anasayfa</a></li>
 						<li><a href="<?php echo MSGet::getSite(); ?>/hakkimda">Hakkımda</a></li>
 					</ul>
 				</div>
@@ -28,7 +28,4 @@
 				</div>
 			</menu>
 		</header>
-		<div class="hosgeldiniz">
-			<span>Bloguma Hosgeldiniz.</span>
-			<div class="ciftCizgi"></div>
-		</div>
+		<div class="reklam"></div>
