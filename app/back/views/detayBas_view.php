@@ -7,6 +7,8 @@
 	<link rel="stylesheet" href="<?php echo MSGet::getSite(); ?>/css/reset.css" type="text/css" />
 	<link href='http://fonts.googleapis.com/css?family=Cardo' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="<?php echo MSGet::getSite(); ?>/css/style.css" type="text/css" />
+	<script type="text/javascript" src="<?php echo MSGet::getSite(); ?>/js/jquery.js"></script>
+	<script type="text/javascript" src="<?php echo MSGet::getSite(); ?>/js/js.js"></script>
 </head>
 <body>
 	<div id="genel">
@@ -22,7 +24,28 @@
 				<img src="<?php echo MSGet::getSite(); ?>/images/resim.jpg" class="resim" alt="profil" />
 				<div class="sagMenu">
 					<ul class="sag">
-						<li><a href="<?php echo MSGet::getSite(); ?>/kategoriler">Kategoriler</a></li>
+						<li>
+							<a href="#" class="kategori">Kategoriler</a>
+							<ul class="altKategori">
+								<?php
+								$limit = count($kategoriler)-1;
+								$sayac = 0;
+								foreach($kategoriler as $kategori){
+									extract($kategori);
+									if($limit != $sayac){
+									?>
+									<li><a href="<?php echo MSGet::getSite(); ?>/kategori/<?php echo $id; ?>"><?php echo $kategoriAdi; ?></a></li>
+									<?php
+									}
+									else{
+									?>
+									<li><a href="<?php echo MSGet::getSite(); ?>/kategori/<?php echo $id; ?>" class="sonAlt"><?php echo $kategoriAdi; ?></a></li>
+									<?php
+									}
+								}
+								?>
+							</ul>
+						</li>
 						<li><a href="<?php echo MSGet::getSite(); ?>/iletisim">İletişim</a></li>
 					</ul>
 				</div>

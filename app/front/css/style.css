@@ -90,6 +90,7 @@
 				}
 				.sag a.selected{
 					color:#3eb3a5;
+					border-bottom:5px solid #afafaf;
 				}
 		.hosgeldiniz{
 			width:100%;
@@ -180,6 +181,8 @@
 						border-bottom:3px solid #ebebeb;
 					}
 						.bilgiler a.kategorisi{
+							display:block;
+							width:150px;
 							color:#3eb3a5;
 							float:left;
 						}
@@ -191,6 +194,7 @@
 						}
 						.begeniSayi{
 							color:#c0c0c0;
+							width:100px;
 							margin-left:7px;
 						}
 						.yorum{
@@ -247,13 +251,12 @@
 		.detayPost{
 			margin-top:60px;
 			display:block;
-			min-height:350px;
-			max-height:1500px;
+			min-height:400px;
+			height:auto;
 			position:relative;
 		}
 			.detayPost li{
-				min-height:350px;
-				max-height:1500px;
+				height:auto;
 				overflow:auto;
 				display:block;
 			}
@@ -379,3 +382,54 @@
 						color:#565656;
 						letter-spacing:1px;
 					}
+		.hakkimdaYazi{
+			width:940px;
+			height:auto;
+			margin:0 auto;
+			float:none;
+			margin-top:30px;
+		}
+			.hakkimdaYazi h2.baslik{
+				font-size:24px;
+			}
+			.hakkimdaYazi p{
+				font-size:16px;
+				letter-spacing:1px;
+				line-height:20px;
+			}
+		.altKategori{
+			position:absolute;
+			top:55px;
+			left:0;
+			z-index:100;
+			background:#fff;
+			width:120px;
+			height:auto;
+			border:1px solid #d8d8d8;
+			padding:10px;
+			box-shadow:0 0 5px #d8d8d8;
+			border-radius:5px;
+			display:none;
+		}
+			.altKategori li{
+				width:100%;
+				height:auto;
+				font-size:18px;
+				text-align:center;
+				line-height:18px;
+			}
+				.altKategori li a{
+					display:block;
+					width:100%;
+					height:15px;
+					padding-top:10px;
+					padding-bottom:10px;
+					border-bottom:1px solid #d8d8d8;
+				}
+				.altKategori li a.sonAlt{
+					border:0;
+				}
+				.altKategori li a:hover{
+					color:#3eb3a5;
+					border-color:#3eb3a5;
+				}

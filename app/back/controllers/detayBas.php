@@ -4,7 +4,8 @@
 			parent::__construct();
 		}
 		function activeIndex(){
-			$this->view("detayBas");
+			$data = $this->model("iletisimModel")->veriler();
+			$this->view("detayBas",$data);
 		}
 	}
 ?>

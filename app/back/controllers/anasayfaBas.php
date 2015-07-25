@@ -4,7 +4,8 @@
 			parent::__construct();
 		}
 		function activeIndex(){
-			$this->view("anasayfaBas");
+			$data = $this->model("iletisimModel")->veriler();
+			$this->view("anasayfaBas",$data);
 		}
 	}
 ?>

@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8" />
-	<title>Mustafa Çolakoğlu Kişisel Blog</title>
+	<title>Hakkımda</title>
 	<meta charset="utf-8" />
 	<link rel="stylesheet" href="<?php echo MSGet::getSite(); ?>/css/reset.css" type="text/css" />
 	<link href='http://fonts.googleapis.com/css?family=Cardo' rel='stylesheet' type='text/css'>
@@ -17,7 +17,7 @@
 			<menu class="anaMenu">
 				<div class="solMenu">
 					<ul class="sol">
-						<li><a href="<?php echo MSGet::getSite(); ?>/anasayfa" class="selected">Anasayfa</a></li>
+						<li><a href="<?php echo MSGet::getSite(); ?>/anasayfa">Anasayfa</a></li>
 						<li><a href="<?php echo MSGet::getSite(); ?>/hakkimda">Hakkımda</a></li>
 					</ul>
 				</div>
@@ -46,12 +46,8 @@
 								?>
 							</ul>
 						</li>
-						<li><a href="<?php echo MSGet::getSite(); ?>/iletisim">İletişim</a></li>
+						<li><a href="<?php echo MSGet::getSite(); ?>/iletisim" class="selected">İletişim</a></li>
 					</ul>
 				</div>
 			</menu>
 		</header>
-		<div class="hosgeldiniz">
-			<span>Bloguma Hosgeldiniz.</span>
-			<div class="ciftCizgi"></div>
-		</div>

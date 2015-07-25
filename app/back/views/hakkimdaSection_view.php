@@ -1,0 +1,29 @@
+<section>
+	<div class="hakkimdaYazi">
+		<h2 class="baslik">Hakkımda</h2>
+		<p>
+			Hakkımda 
+			Hakkımda 
+			Hakkımda 
+			Hakkımda 
+			Hakkımda 
+			Hakkımda 
+			Hakkımda 
+			Hakkımda 
+			Hakkımda 
+			Hakkımda 
+			Hakkımda 
+			Hakkımda 
+			Hakkımda 
+			Hakkımda 
+			Hakkımda 
+			Hakkımda 
+			Hakkımda 
+			Hakkımda 
+			Hakkımda 
+		</p>
+	</div>
+</section>
+</div>
+</body>
+</html>

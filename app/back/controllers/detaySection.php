@@ -4,7 +4,8 @@
 			parent::__construct();
 		}
 		function activeIndex(){
-			$this->view("detaySection");
+			$data = $this->model("detaySectionModel")->veriler();
+			$this->view("detaySection",$data);
 		}
 	}
 ?>

@@ -4,7 +4,8 @@
 			parent::__construct();
 		}
 		function activeIndex(){
-			$this->view("anasayfaSection");
+			$data = $this->model("anaSayfaSectionModel")->yazilar();
+			$this->view("anasayfaSection",$data);
 		}
 	}
 ?>
