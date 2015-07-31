@@ -8,6 +8,9 @@
 	<link href='http://fonts.googleapis.com/css?family=Cardo' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="<?php echo MSGet::getSite(); ?>/css/style.css" type="text/css" />
 	<script type="text/javascript" src="<?php echo MSGet::getSite(); ?>/js/jquery.js"></script>
+	<script type="text/javascript">
+		var site = "<?php echo MSGet::getSite(); ?>";
+	</script>
 	<script type="text/javascript" src="<?php echo MSGet::getSite(); ?>/js/js.js"></script>
 </head>
 <body>

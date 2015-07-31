@@ -22,7 +22,7 @@
 				$this->insert("yorumlar","yaziId,yorumId,adiSoyadi,ePosta,yorum","'$yaziId','$yorumId','$adiSoyadi','$ePosta','$yorum'");
 				header("Location:".MSGet::getSite()."/detay/".$id."#".$this->lastInsertId());
 			}
-			$data["yorumlar"]=$this->select("yorumlar");
+			$data["yorumlar"]=$this->select("yorumlar","yaziId='$id'");
 			$data["yorumSayi"]=count($data["yorumlar"]);
 			return $data;
 		}
