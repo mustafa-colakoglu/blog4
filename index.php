@@ -5,9 +5,9 @@
 	* @author Mustafa Çolakoğlu
 	* @since Version 1.0
 **/
-	define("SYSTEM_PATH","./system/");
-	define("APPLICATION_PATH","./app/");
-	define("ENVIRONMENT","development");
+	define("SYSTEM_PATH","../../msMVC/system/");
+	define("APPLICATION_PATH","./blog4/");
+	define("ENVIRONMENT","production");
 	if (defined('ENVIRONMENT'))
 	{
 		switch (ENVIRONMENT)
@@ -25,7 +25,7 @@
 				exit('The application environment is not set correctly.');
 		}
 	}
-	require_once "system/core/MSCore.php";
+	require_once SYSTEM_PATH."/core/MSCore.php";
 //---------------------------------------------------------------------------
 /* End of file index.php */
 /* Location : ./index.php*/
