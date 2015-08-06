@@ -2,21 +2,21 @@
 	namespace Models;
 	use MS\MSModel;
 	use MSGet;
-	class detaySectionModel extends MSModel{
+	class DetaySectionModel extends MSModel{
 		function __construct(){
 			parent::__construct();
 		}
 		function veriler(){
 			$data = array();
 			$url = $this->url;
-			$id = $this->clean($url[1]);
+			$id = $this->Uselib->clean($url[1]);
 			$data["yaziDetay"] = $this->select("yazilar","id='$id'");
 			$data["kategoriler"]=$this->select("kategoriler","","","ORDER BY sira ASC");
 			$kategoriId = $data["yaziDetay"][0]["kategoriId"];
 			$kategori = $this->select("kategoriler","id='$kategoriId'");
 			$data["yaziDetay"][0]["kategoriAdi"] =$kategori[0]["kategoriAdi"];
 			if($_POST){
-				$this->formDataFix();
+				$this->Uselib->formDataFix();
 				$adiSoyadi = @$_POST["adSoyad"];
 				$ePosta = @$_POST["ePosta"];
 				$yorum = @$_POST["yorum"];

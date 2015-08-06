@@ -1,12 +1,13 @@
 <?php
 	namespace Controllers;
 	use MS\MSController;
-	class hakkimdaSection extends MSController{
+	class AjaxYaziGetir extends MSController{
 		function __construct(){
 			parent::__construct();
 		}
 		function actionIndex(){
-			$this->view("hakkimdaSection");
+			$data = $this->model("ajaxYaziGetir")->veriler();
+			$this->view("ajaxYaziGetir",$data);
 		}
 	}
 ?>

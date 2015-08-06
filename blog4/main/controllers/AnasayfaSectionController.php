@@ -1,12 +1,12 @@
 <?php
 	namespace Controllers;
 	use MS\MSController;
-	class anasayfaSection extends MSController{
+	class AnasayfaSection extends MSController{
 		function __construct(){
 			parent::__construct();
 		}
 		function actionIndex(){
-			$data = $this->model("anaSayfaSectionModel")->yazilar();
+			$data = $this->model("anaSayfaSection")->yazilar();
 			$this->view("anasayfaSection",$data);
 		}
 	}

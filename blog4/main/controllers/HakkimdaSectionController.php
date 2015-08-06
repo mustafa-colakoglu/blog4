@@ -1,12 +1,12 @@
 <?php
-	namespace Controllers\admin;
+	namespace Controllers;
 	use MS\MSController;
-	class kategori extends MSController{
+	class HakkimdaSection extends MSController{
 		function __construct(){
 			parent::__construct();
 		}
 		function actionIndex(){
-			
+			$this->view("hakkimdaSection");
 		}
 	}
 ?>

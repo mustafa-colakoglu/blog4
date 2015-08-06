@@ -1,7 +1,7 @@
 <?php
 	namespace Models;
 	use MS\MSModel;
-	class anaSayfaSectionModel extends MSModel{
+	class AnaSayfaSectionModel extends MSModel{
 		function __construct(){
 			parent::__construct();
 		}

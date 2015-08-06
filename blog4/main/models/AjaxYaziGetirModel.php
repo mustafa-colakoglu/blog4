@@ -1,14 +1,14 @@
 <?php
 	namespace Models;
 	use MS\MSModel;
-	class ajaxYaziGetirModel extends MSModel{
+	class AjaxYaziGetirModel extends MSModel{
 		function __construct(){
 			parent::__construct();
 		}
 		function veriler(){
 			$data = array();
 			if($_POST){
-				$sayfa = $this->clean(@$_POST["sayfa"]);
+				$sayfa = $this->Uselib->clean(@$_POST["sayfa"]);
 				$yaziSayi = 1;
 				$start = $sayfa*$yaziSayi;
 				$finish=($sayfa+1)*$yaziSayi;

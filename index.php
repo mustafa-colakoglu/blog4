@@ -7,7 +7,7 @@
 **/
 	define("SYSTEM_PATH","../../msMVC/system/");
 	define("APPLICATION_PATH","./blog4/");
-	define("ENVIRONMENT","production");
+	define("ENVIRONMENT","development");
 	if (defined('ENVIRONMENT'))
 	{
 		switch (ENVIRONMENT)

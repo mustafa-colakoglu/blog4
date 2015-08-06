@@ -1,13 +1,13 @@
 <?php
 	namespace Controllers;
 	use MS\MSController;
-	class anasayfa extends MSController{
+	class Hakkimda extends MSController{
 		function __construct(){
 			parent::__construct();
 		}
 		function actionIndex(){
-			$this->controller("anasayfaBas");
-			$this->controller("anasayfaSection");
+			$this->controller("hakkimdaBas");
+			$this->controller("hakkimdaSection");
 		}
 	}
 ?>

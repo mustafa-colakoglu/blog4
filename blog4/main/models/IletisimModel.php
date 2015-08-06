@@ -1,12 +1,12 @@
 <?php
 	namespace Models;
 	use MS\MSModel;
-	class iletisimModel extends MSModel{
+	class IletisimModel extends MSModel{
 		function __construct(){
 			parent::__construct();
 		}
 		function postKaydet(){
-			$this->formDataFix();
+			$this->Uselib->formDataFix();
 			if($_POST){
 				$adSoyad = @$_POST["adSoyad"];
 				$ePosta = @$_POST["ePosta"];

@@ -1,12 +1,13 @@
 <?php
 	namespace Controllers\admin;
 	use MS\MSController;
-	class admin extends MSController{
+	use MSGet;
+	class Admin extends MSController{
 		function __construct(){
 			parent::__construct();
 		}
 		function actionIndex(){
-			$giris = $_SESSION["blogGiris"];
+			$giris = @$_SESSION["blogGiris"];
 			if($_POST and !$giris){
 				if(@$_POST["kadi"] === "mustafa220" and @$_POST["sifre"] === "mustafa"){
 					$_SESSION["blogGiris"] = true;
@@ -18,7 +19,7 @@
 				$this->view("admin/adminSon");
 			}
 			else{
-				$this->controller("admin/anasayfa");
+				header("Location:".MSGet::getSite()."/admin/anasayfa");
 			}
 		}
 	}
