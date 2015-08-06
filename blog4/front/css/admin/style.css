@@ -1,0 +1,59 @@
+/*Bu CSS Dökümanı Mustafa Çolakoğlu tarafından hazırlanmıştır.*/
+body{
+	background:#fff;
+}
+#genel{
+	width:1200px;
+	height:auto;
+	font-size:20px;
+	font-family:Helvatica;
+	float:none;
+	margin:0 auto;
+}
+/* Standartlar */
+	input[type="text"],input[type="password"]{
+		border:0px;
+		font-size:20px;
+		line-height:20px;
+		padding:4px;
+		border:1px solid #2e83ff;
+		color:#000;
+	}
+	input[type="submit"]{
+		width:80px;
+		line-height:25px;
+		background:#2e83ff;
+		color:#fff;
+		border:0px;
+		cursor:pointer;
+	}
+/*#Standartlar */
+	.girisForm{
+		width:200px;
+		float:none;
+		margin:0 auto;
+		background:#fff;
+		height:120px;
+		padding-top:20px;
+		padding-bottom:20px;
+		padding-left:10px;
+		padding-right:10px;
+		margin-top:200px;
+		border:1px solid #2e83ff;
+	}
+		.girisForm form{
+			display:block;
+			height:120px;
+		}
+		.girisForm .input{
+			width:200px;
+			height:30px;
+			padding-top:5px;
+			padding-bottom:5px;
+		}
+			.girisForm .input input[type="text"],.girisForm .input input[type="password"]{
+				width:190px;
+			}
+			.girisForm .input input[type="submit"]{
+				float:right;
+			}
