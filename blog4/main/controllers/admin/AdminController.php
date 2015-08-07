@@ -11,6 +11,7 @@
 			if($_POST and !$giris){
 				if(@$_POST["kadi"] === "mustafa220" and @$_POST["sifre"] === "mustafa"){
 					$_SESSION["blogGiris"] = true;
+					$giris = true;
 				}
 			}
 			if(!$giris){
