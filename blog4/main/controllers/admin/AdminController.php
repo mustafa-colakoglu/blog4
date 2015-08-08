@@ -20,10 +20,11 @@
 					),
 					array(
 						"actions" => array("actionLogin"),
-						"expression" => $this->isLogin(),
+						"expression" => !$this->isLogin(),
 						"redirect" => "admin",
 						"ip" => "::1"
-					)
+					),
+					array()
 				)
 			);
 		}
