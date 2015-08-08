@@ -10,10 +10,11 @@
 			$this->acl->setAccess(
 				array(
 					array(
-						"actions" => array("actionIndex")
+						"actions" => array("actionIndex"),
+						"expression" => true
 					),
 					array(
-						"actions" => array("actionDeneme"),
+						"actions" => array("actionDeneme","actionCikis"),
 						"expression" => $this->isLogin(),
 						"redirect" => "admin/actionLogin",
 						"ip" => "::1"
@@ -24,7 +25,11 @@
 						"redirect" => "admin",
 						"ip" => "::1"
 					),
-					array()
+					array(
+						"actions" => array("isLogin"),
+						"expression" => false,
+						"redirect" => "admin"
+					)
 				)
 			);
 		}
@@ -54,6 +59,7 @@
 		}
 		function actionDeneme(){
 			echo "burasi Deneme action u bunu sadece giris yapanlar ve ip si ::1 olanlar gorebilir";
+			echo '<br /><a href="'.$this->site.'/admin/actionCikis">Cikis</a>';
 		}
 		function isLogin(){
 			$giris = @$_SESSION["blogGiris"];
@@ -63,6 +69,10 @@
 			else{
 				return false;
 			}
+		}
+		function actionCikis(){
+			$_SESSION["blogGiris"] = false;
+			header("Location:".$this->site);
 		}
 	}
 ?>
